@@ -1,0 +1,50 @@
+Nov 19 20:31:14.009 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 19 20:31:14.010 HYPERVISOR: Started on IP = 192.168.0.103, TCP port = 58255.
+Nov 19 20:31:14.011 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 20:31:14.012 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\User\GNS3\projects\Final_project\project-files\dynamips 
+Nov 19 20:31:14.012 GENERAL: working_dir=C:\Users\User\GNS3\projects\Final_project\project-files\dynamips
+Nov 19 20:31:14.012 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\User\GNS3\projects\Final_project\project-files\dynamips\7741e11f-7105-44af-8938-40678d5ad2cf 
+Nov 19 20:31:14.012 GENERAL: working_dir=C:\Users\User\GNS3\projects\Final_project\project-files\dynamips\7741e11f-7105-44af-8938-40678d5ad2cf
+Nov 19 20:31:14.012 HYPERVISOR: exec_cmd: vm create R5 6 c7200 
+Nov 19 20:31:14.013 VM: VM R5 created.
+Nov 19 20:31:14.013 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Nov 19 20:31:14.013 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Nov 19 20:31:14.013 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:14.013 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Nov 19 20:31:14.014 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Nov 19 20:31:14.014 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Nov 19 20:31:14.014 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:14.015 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x62cc83a0 
+Nov 19 20:31:14.015 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/User/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: c7200 set_mac_addr R5 ca06.30c8.0000 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-GE 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:14.016 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 PA-GE 
+Nov 19 20:31:14.017 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:14.017 HYPERVISOR: exec_cmd: vm slot_add_binding R5 3 0 PA-GE 
+Nov 19 20:31:16.028 HYPERVISOR: exec_cmd: nio create_udp udp-e765b502-23b0-430e-ba2f-2967dba2ea05 10022 127.0.0.1 10023 
+Nov 19 20:31:16.263 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-e765b502-23b0-430e-ba2f-2967dba2ea05 
+Nov 19 20:31:16.263 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:31:17.122 HYPERVISOR: exec_cmd: nio create_udp udp-b33ba56c-ba0d-4c9b-822b-b1140d4d8f2a 10044 127.0.0.1 10045 
+Nov 19 20:31:17.124 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-b33ba56c-ba0d-4c9b-822b-b1140d4d8f2a 
+Nov 19 20:31:17.124 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:33:32.347 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Nov 19 20:33:32.353 HYPERVISOR: exec_cmd: vm set_ghost_file R5 C:\Users\User\GNS3\projects\Final_project\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 19 20:33:32.354 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:33:32.361 HYPERVISOR: exec_cmd: vm set_config R5 configs\i6_startup-config.cfg configs\i6_private-config.cfg 
+Nov 19 20:33:32.362 HYPERVISOR: exec_cmd: vm start R5 
+Nov 19 20:34:02.713 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 19 20:34:58.766 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:34:58.767 HYPERVISOR: exec_cmd: vm stop R5 
+Nov 19 20:34:58.864 VM: VM R5 shutdown.
+Nov 19 20:34:58.865 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 19 20:35:00.362 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 20:35:00.362 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 19 20:35:00.364 HYPERVISOR: exec_cmd: vm delete R5 
+Nov 19 20:35:00.364 VM: VM R5 destroyed.
+Nov 19 20:35:00.365 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 20:35:00.742 HYPERVISOR: Stopped.
+Nov 19 20:35:00.742 GENERAL: reset done.
